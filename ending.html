@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>One Last Thing ❤️</title>
+
+<style>
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  min-height:100vh;
+  font-family:Arial,Helvetica,sans-serif;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+  background:
+    radial-gradient(circle at top,#fff7d6 0,#ffdce9 35%,#dfe5ff 100%);
+  color:#392832;
+}
+
+.card{
+  width:100%;
+  max-width:620px;
+  padding:35px 22px;
+  text-align:center;
+  border-radius:32px;
+  background:rgba(255,255,255,.94);
+  box-shadow:0 20px 60px rgba(0,0,0,.15);
+  animation:appear 1.2s ease;
+}
+
+@keyframes appear{
+  from{
+    opacity:0;
+    transform:translateY(25px) scale(.96);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0) scale(1);
+  }
+}
+
+.emoji{
+  font-size:65px;
+  margin-bottom:10px;
+}
+
+h1{
+  color:#c43d65;
+  font-size:42px;
+  margin:10px 0 20px;
+}
+
+h2{
+  color:#c43d65;
+}
+
+p{
+  font-size:18px;
+  line-height:1.8;
+}
+
+.quote{
+  margin:25px 0;
+  padding:22px;
+  border-radius:24px;
+  background:linear-gradient(135deg,#fff0f5,#fff8dc);
+  font-size:20px;
+  font-weight:bold;
+}
+
+.heart{
+  font-size:30px;
+  letter-spacing:5px;
+  margin:20px 0;
+}
+
+button{
+  border:0;
+  border-radius:30px;
+  padding:15px 28px;
+  margin-top:15px;
+  color:white;
+  background:linear-gradient(135deg,#d94b72,#b82f58);
+  font-size:16px;
+  font-weight:bold;
+}
+
+#secret{
+  display:none;
+}
+
+.small{
+  font-size:14px;
+  opacity:.7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <div class="emoji">🥹❤️✨</div>
+
+  <h1>One Last Thing...</h1>
+
+  <p>
+    You reached the end.
+    <br>
+    But I didn't want to finish this with just
+    <b>"Your response has been recorded."</b> 😭
+  </p>
+
+  <div class="quote">
+    Some things cannot be measured by a number.
+    <br><br>
+    Not 10/10.<br>
+    Not 100%.<br>
+    Not even 1000%.
+    <br><br>
+    Some bonds are simply...
+    <br>
+    <b>PRICELESS. ❤️</b>
+  </div>
+
+  <div class="heart">
+    ❤️ 🪢 ❤️
+  </div>
+
+  <p>
+    Thank you for being a part of these memories,
+    for all the laughs, fights, talks and everything
+    in between.
+  </p>
+
+  <p>
+    Whatever happens in the future,
+    I hope we always keep this crazy bond alive. 😎
+  </p>
+
+  <button onclick="reveal()">
+    One Tiny Secret 👀
+  </button>
+
+  <div id="secret">
+
+    <h2>✨ YOU FOUND IT ✨</h2>
+
+    <p>
+      There wasn't really another surprise...
+      <br><br>
+      <b>YOU are the surprise. 😂❤️</b>
+    </p>
+
+    <p>
+      And yes...
+      your annoying Lil Bro isn't going anywhere. 😎
+    </p>
+
+    <div class="heart">
+      🪢❤️🪢
+    </div>
+
+    <h2>
+      Happy Raksha Bandhan ❤️
+    </h2>
+
+    <p>
+      Keep smiling, keep laughing,
+      and keep being the amazing sister you are. 🥹
+    </p>
+
+    <p>
+      <b>— Your Lil Bro 😎❤️</b>
+    </p>
+
+  </div>
+
+  <p class="small">
+    Made with a ridiculous amount of effort 😂❤️
+  </p>
+
+</div>
+
+<script>
+function reveal(){
+
+  document.getElementById("secret").style.display="block";
+
+  window.scrollTo({
+    top:document.body.scrollHeight,
+    behavior:"smooth"
+  });
+
+}
+</script>
+
+</body>
+</html>
